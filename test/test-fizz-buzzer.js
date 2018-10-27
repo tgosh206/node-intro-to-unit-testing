@@ -3,7 +3,7 @@ const fizzBuzzer = require('../fizzBuzzer');
 
 describe('fizzBuzzer', function() {
   it('should return "fizz-buzz" on multiples of 15', function() {
-    [15, 30, 45].forEach(function(input) {
+    [15, 30, 45, 60].forEach(function(input) {
       expect(fizzBuzzer(input)).to.equal('fizz-buzz');
     });
   });
@@ -15,7 +15,7 @@ describe('fizzBuzzer', function() {
   });
 
   it('should return "buzz" on multiples of 5', function() {
-    [5, 10, 20].forEach(function(input) {
+    [5, 10, 15, 20].forEach(function(input) {
       expect(fizzBuzzer(input)).to.equal('buzz');
     });
   });
